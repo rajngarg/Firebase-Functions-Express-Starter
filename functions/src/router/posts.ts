@@ -1,9 +1,12 @@
 import express = require('express');
 
-const postsRouter = express();
+const posts = express();
 
-postsRouter.get("/", (request: any, response: any) => {
+//You can create as many methods as you want for POST, GET, PUT etc.
+
+posts.get("/", (request: any, response: any) => {
     response.send("Here you get your posts")
 });
 
-export default postsRouter
+
+export default posts
